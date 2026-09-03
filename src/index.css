@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --tv-up: #089981;
+    --tv-up-bg: #e7f7f4;
+    --tv-down: #f23645;
+    --tv-down-bg: #fdecee;
+    --tv-blue: #2962ff;
+    --tv-blue-hover: #1e53e5;
+    --tv-dark: #131722;
+    --tv-gray: #787b86;
+    --tv-border: #e0e3eb;
+    --tv-card: #f0f3fa;
+    --tv-card-hover: #e4e7ef;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif;
+    color: #131722;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.btn-tv-gradient {
+  background: linear-gradient(135deg, #0052ff 0%, #7928ca 100%);
+}
+.btn-tv-gradient:hover {
+  opacity: 0.95;
+  box-shadow: 0 4px 12px rgba(121, 40, 202, 0.25);
+}
+
+@keyframes priceTickUp {
+  0% { background-color: rgba(8, 153, 129, 0.2); }
+  100% { background-color: transparent; }
+}
+
+@keyframes priceTickDown {
+  0% { background-color: rgba(242, 54, 69, 0.2); }
+  100% { background-color: transparent; }
+}
+
+.tick-up {
+  animation: priceTickUp 1s ease-out;
+}
+
+.tick-down {
+  animation: priceTickDown 1s ease-out;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Markets Overview",
+  "description": "Real-time global markets overview tracking world indices, active stocks, crypto, and currencies with interactive charts and technical ratings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
